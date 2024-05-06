@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+
+	<title> Koolits Frozen Yogurt Fruit	</title>
+	
+		<meta http-equiv="content type" content="text/html; charset=utf-8">
+	
+	<style>
+		
+		body{
+			background-color: #9e64d1;
+			font-family: Arial;
+			box-sizing: border-box;
+		}
+		
+		.navbar {
+			display: flex;
+			border-radius: 25px 25px 0px 0px;
+			background-color: #542182;
+			margin: 0px;
+			padding: 15px;
+		}
+		
+		.navbar a, .dropdown .dropbtn {
+			text-decoration: none;
+			font-size: 18px;
+			font-weight: bold;
+			color: white;
+			border-radius: 5px;
+			padding: 20px;
+			margin: 10px;
+			transition-duration: 0.4s;
+		}
+		
+		.dropdown {
+			float: left;
+			overflow: hidden;
+		}
+		
+		.dropbtn {
+			background-color: inherit;
+			border: none;
+			outline: none;
+			box-shadow: none;
+		}
+		
+		.dropdown-content {
+			border-radius: 5px;
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+
+		.dropdown-content a {
+			float: none;
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+
+		.dropdown:hover .dropdown-content {
+			transition-duration: 0.4s;
+			display: block;
+		}
+		
+		.navbar a:hover,.dropbtn:hover, .dropdown-content a:hover {
+			color: #eeb1f0;
+			background-color: white;
+		}
+		
+		.info-box {
+			border-radius: 0px;
+			margin-top: 0px;
+			margin-bottom: 0px;
+			background-color: #eeb1f0;
+			padding: 20px;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+		}
+		
+		.info-box2 {
+			border-radius: 0px 0px 25px 25px;
+			margin-top: 0px;
+			margin-bottom: 25px;
+			padding: 20px 300px;
+			background-color: white;
+		}
+		
+		.info-box2-text{
+			max-width: 800px;
+			margin: 0 auto;
+            padding: 20px;
+			font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+		}
+		
+		footer {
+			background-color: white;
+			color: #fff;
+			padding: 20px; 
+			text-align: center; 
+			display: flex; 
+			justify-content: center; 
+			align-items: center; 
+			flex-wrap: wrap; 
+		}
+
+		.footer-logo {
+			width: 120px;
+			height: auto; 
+		}
+
+		.footer-credentials {
+			color: black; 
+			margin-left: 600px;
+			font-size: 11px;
+			text-align: right;
+		}
+		
+		h1{
+			text-align: center;
+			color: orange;
+			text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  			font-family: Tahoma;
+			text-transform: uppercase;
+		}
+		
+		.container {
+			background-image: url('background.jpg');
+			background-transform: rotate(45deg);
+			background-size: cover;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            }
+	
+	</style>
+	
+</head>
+
+<body>
+
+    <div class="navbar">
+	
+        <a href="index.html">Home </a>
+		<a href="Promotionspage.html">Promotions </a>
+        <a href="Menupage.html">Menu </a>
+        <a href="Orderpage.html">Order </a>
+		
+		
+        <div class="dropdown">
+		
+            <button class="dropbtn">Koolits
+                <i class="fa fa-caret-down"></i>
+            </button>
+			
+            <div class="dropdown-content">
+                <a href="AboutusPage.html">About Us</a>
+                <a href="Reviewpage.html">Reviews</a>
+				<a href="FAQpage.html">FAQ</a>
+                <a href="ContactusPage.html"> Contact Us </a>	
+            </div>
+			
+        </div>
+		
+    </div>
+	
+	<div class="info-box">
+		
+		<h1>Order</h1>
+		
+	</div>
+	
+	<div class="info-box2">
+	
+		<div class="info-box2-text">
+			
+			
+			<h3>What's your order?</h3>
+			
+			<div class="container">
+			
+				<form method=post action="mailto:kcgorospe.mapua.edu.ph">
+				
+					<fieldset> <legend align=left> <h3> INFORMATION </h3>  </legend>
+					
+						First Name: &nbsp &nbsp &nbsp<input type=text name="FN" size= 35 maxlength= 40>  <br />
+						Last Name:&nbsp &nbsp &nbsp &nbsp<input type=text name="LN" size= 35 maxlength= 40> <br />
+						Address: &nbsp &nbsp &nbsp &nbsp &nbsp <input type=text name="ADDR" size= 35 maxlength= 100> <br />
+						Contact Number: &nbsp &nbsp &nbsp <input type=Number name="TPN" size= 20 maxlength= 11> <br />
+						
+					
+					</fieldset>
+					
+					<fieldset> <legend align=left> <h3> ORDER </h3>  </legend>
+					
+						
+						<b>List down your orders!</b>
+						<br />
+									<textarea style="resize:none" name="feedback1" rows=10 cols=75> </textarea> <br /> <br />
+						
+						<b>Add On (Optional)</b>
+						<br />
+									<input type=radio name="Add ons" value="yes"> Yes
+									<input type=radio name="No add ons" value="no"> No <br /> <br />
+						
+						<b>If yes, what would you like to add? </b>
+						<br />
+									<textarea style="resize:none" name="Add ons" rows=10 cols=75> </textarea> <br /> <br />
+						
+					</fieldset>
+					
+					<fieldset> <legend align=left> <h3> MODE OF DELIVERY AND PAYMENT METHOD </h3>  </legend>
+					
+						<b> MODE OF DELIVERY </b>
+						<br />
+									<input type=radio name="Pick Up" value="Pick up"> Pick Up
+									<input type=radio name="Deliver" value="Deliver"> Delivery <br /> <br />
+									
+						<b> PAYMENT METHOD </b>
+						<br />
+									<input type=radio name="Online Payment" value="Online Payment"> Online Payment
+									<input type=radio name="COD" value="COD"> Cash On Delivery <br /> <br />
+						
+						<center>
+						
+								<input type=submit value=submit>
+								<input type=reset value=reset>
+								
+								<h1> THANK YOU FOR ORDERING! </h1>
+							
+						</center>
+								
+								
+					</fieldset>
+					
+				</form>
+				
+			</div>
+		
+		</div>
+		
+	</div>
+	
+	<footer>
+		
+		<img src="logo.png" alt="Koolits Logo" class="footer-logo">
+
+			<div class="footer-credentials">
+				<p>Koolits Frozen Yogurt Fruit Shake </p>
+				<p>54 D.M. Guevarra Corner Kanlaon, Highway Hills 1550</p>
+				<p>Mandaluyong City, 1550 Mandaluyong</p>
+				<p>Phone: +63917 170 2037</p>
+			</div>
+	
+    </footer>
+	
+
+</body>
+
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koolits Frozen Yogurt Fruit</title>
+    <style>
+	
+        body{
+			background-color: #9e64d1;
+			font-family: Arial;
+			box-sizing: border-box;
+		}
+		
+		.navbar {
+			display: flex;
+			border-radius: 25px 25px 0px 0px;
+			background-color: #542182;
+			margin: 0px;
+			padding: 15px;
+		}
+		
+		.navbar a, .dropdown .dropbtn {
+			text-decoration: none;
+			font-size: 18px;
+			font-weight: bold;
+			color: white;
+			border-radius: 5px;
+			padding: 20px;
+			margin: 10px;
+			transition-duration: 0.4s;
+		}
+		
+		.dropdown {
+			float: left;
+			overflow: hidden;
+		}
+		
+		.dropbtn {
+			background-color: inherit;
+			border: none;
+			outline: none;
+			box-shadow: none;
+		}
+		
+		.dropdown-content {
+			border-radius: 5px;
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+
+		.dropdown-content a {
+			float: none;
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+
+		.dropdown:hover .dropdown-content {
+			transition-duration: 0.4s;
+			display: block;
+		}
+		
+		.navbar a:hover,.dropbtn:hover, .dropdown-content a:hover {
+			color: #eeb1f0;
+			background-color: white;
+		}
+		
+		.info-box {
+			border-radius: 0px;
+			margin-top: 0px;
+			margin-bottom: 0px;
+			background-color: #eeb1f0;
+			padding: 20px;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+		}
+		
+		.info-box2 {
+			border-radius: 0px 0px 25px 25px;
+			margin-top: 0px;
+			margin-bottom: 25px;
+			padding: 20px 300px;
+			background-color: white;
+		}
+		
+		.info-box2-text{
+			max-width: 800px;
+			margin: 0 auto;
+            padding: 20px;
+			font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+			
+		}
+		
+		footer {
+			background-color: white;
+			color: #fff;
+			padding: 20px; 
+			text-align: center; 
+			display: flex; 
+			justify-content: center; 
+			align-items: center; 
+			flex-wrap: wrap; 
+		}
+
+		.footer-logo {
+			width: 120px;
+			height: auto; 
+		}
+
+		.footer-credentials {
+			color: black; 
+			margin-left: 600px;
+			font-size: 11px;
+			text-align: right;
+		}
+		
+		h1{
+			text-align: center;
+			color: orange;
+			text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  			font-family: Tahoma;
+			text-transform: uppercase;
+		}
+
+        .faq-category {
+            text-align: center;
+            color: #542182;
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 30px;
+        }
+
+        .faq-question {
+            color: #542182;
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .faq-answer {
+            color: #542182;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+		
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+	
+        <a href="index.html">Home </a>
+		<a href="Promotionspage.html">Promotions </a>
+        <a href="Menupage.html">Menu </a>
+        <a href="Orderpage.html">Order </a>
+		
+		
+        <div class="dropdown">
+		
+            <button class="dropbtn">Koolits
+                <i class="fa fa-caret-down"></i>
+            </button>
+			
+            <div class="dropdown-content">
+                <a href="AboutusPage.html">About Us</a>
+                <a href="Reviewpage.html">Reviews</a>
+				<a href="FAQpage.html">FAQ</a>
+                <a href="ContactusPage.html"> Contact Us </a>	
+            </div>
+			
+        </div>
+		
+    </div>
+	
+    <div class="info-box">
+        <h1>FAQ</h1>
+    </div>
+	
+    <div class="info-box2">
+	
+        <div class="info-box2-text">
+		
+			<center>
+			
+				<div class="faq-category">Ordering & Payment</div>
+				<div class="faq-question">How does the ordering system work?</div>
+				<div class="faq-answer">
+					To place an order, simply browse our menu, select the items you'd like to purchase, and proceed to checkout. Follow the prompts to enter your payment and shipping information to complete the order.
+				</div>
+				<div class="faq-question">What payment methods do you accept?</div>
+				<div class="faq-answer">
+					We accept various payment methods including credit/debit cards, G-cash, PayPal, PayMaya, bank transfers, or on cash delivery. You can choose your preferred payment option during checkout.
+				</div>
+				<!-- More questions to be added here -->
+				
+				<div class="faq-category">Shipping & Delivery</div>
+				<div class="faq-question">How long will it take for my order to arrive?</div>
+				<div class="faq-answer">
+					We understand the importance of freshness when it comes to yogurt. Rest assured, we prioritize prompt delivery to ensure your order reaches you as quickly as possible. Our typical delivery 
+					timeframe is  20 minutes from the time of order placement, ensuring that you swiftly receive your freshly prepared yogurt. Please note that delivery times may vary based on your location 
+					and other factors.
+				</div>
+				<div class="faq-question">Do you offer international shipping?</div>
+				<div class="faq-answer">
+					No, we currently do not offer international shipping. Our delivery services are available only within select cities within the country. We apologize for any inconvenience this may cause.
+				</div>
+				
+			</center>
+			
+		</div>
+    
+	</div>
+	
+    <footer>
+	
+        <img src="logo.png" alt="Koolits Logo" class="footer-logo">
+        
+		<div class="footer-credentials">
+            <p>Koolits Frozen Yogurt Fruit Shake </p>
+            <p>54 D.M. Guevarra Corner Kanlaon, Highway Hills 1550</p>
+            <p>Mandaluyong City, 1550 Mandaluyong</p>
+            <p>Phone: +63917 170 2037</p>
+        </div>
+		
+    </footer>
+	
+</body>
+
+</html>

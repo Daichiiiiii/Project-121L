@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+
+<head>
+
+	<title> Koolits Frozen Yogurt Fruit	</title>
+	
+		<meta http-equiv="content type" content="text/html; charset=utf-8">
+	
+	<style>	
+		
+		body{
+			background-color: #9e64d1;
+			font-family: Arial;
+			box-sizing: border-box;
+		}
+		
+		.navbar {
+			display: flex;
+			border-radius: 25px 25px 0px 0px;
+			background-color: #542182;
+			margin: 0px;
+			padding: 15px;
+		}
+		
+		.navbar a, .dropdown .dropbtn {
+			text-decoration: none;
+			font-size: 18px;
+			font-weight: bold;
+			color: white;
+			border-radius: 5px;
+			padding: 20px;
+			margin: 10px;
+			transition-duration: 0.4s;
+		}
+		
+		.dropdown {
+			float: left;
+			overflow: hidden;
+		}
+		
+		.dropbtn {
+			background-color: inherit;
+			border: none;
+			outline: none;
+			box-shadow: none;
+		}
+		
+		.dropdown-content {
+			border-radius: 5px;
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+
+		.dropdown-content a {
+			float: none;
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+
+		.dropdown:hover .dropdown-content {
+			transition-duration: 0.4s;
+			display: block;
+		}
+		
+		.navbar a:hover,.dropbtn:hover, .dropdown-content a:hover {
+			color: #eeb1f0;
+			background-color: white;
+		}
+		
+		.cover{
+			border-radius: 0px 0px 25px 25px;
+			background-image: url('image1.jpg');
+			background-size: cover; 
+			background-position: center; 
+			height: 500px; 
+			width: 100%; 
+			margin: 0; 
+            padding: 0; 
+		}
+		
+		.cover-content {
+			text-align: center; 
+			padding-top: 100px; 
+		}
+		
+		.info-box {
+			border-radius: 25px 25px 0px 0px;
+			margin-top: 25px;
+			margin-bottom: 0px;
+			background-color: #eeb1f0;
+			padding: 20px;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+		}
+		
+		.info-box2 {
+			background-image: url('background.jpg');
+			background-transform: rotate(45deg);
+			background-size: cover;
+			border-radius: 0px 0px 25px 25px;
+			margin-top: 0px;
+			margin-bottom: 25px;
+			background-color: white;
+			padding: 20px;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+		}
+		
+		footer {
+			background-color: white;
+			color: #fff;
+			padding: 20px; 
+			text-align: center; 
+			display: flex; 
+			justify-content: center; 
+			align-items: center; 
+			flex-wrap: wrap; 
+		}
+
+		.footer-logo {
+			width: 120px;
+			height: auto; 
+		}
+
+		.footer-credentials {
+			color: black; 
+			margin-left: 600px;
+			font-size: 11px;
+			text-align: right;
+		}
+		
+		h1{
+			text-align: center;
+			color: orange;
+			text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  			font-family: Tahoma;
+			text-transform: uppercase;
+		}
+		
+		.button{
+			border: none;
+			padding: 16px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			transition-duration: 0.4s;
+			cursor: pointer;
+			text-transform: uppercase;
+		}
+		
+		.button1{
+			margin-bottom: 25px;
+			margin-top: 25px;
+			margin-left:40%;
+			margin-right: 40%;
+			border-width: 15%;
+			border-radius: 15px;
+			background-color: purple;
+			color: orange; 
+			border: 2px solid;
+			border-color: purple;
+		}
+		
+		.button1:hover{
+			background-color: white;
+			color: purple;
+		}
+		
+		div.gallery img {
+			width: 20%;
+			height: auto;
+			padding: 5px;
+		}
+		
+	</style>
+	
+</head>
+
+<body>
+
+    <div class="navbar">
+	
+        <a href="index.html">Home </a>
+		<a href="Promotionspage.html">Promotions </a>
+        <a href="Menupage.html">Menu </a>
+        <a href="Orderpage.html">Order </a>
+		
+		
+        <div class="dropdown">
+		
+            <button class="dropbtn">Koolits
+                <i class="fa fa-caret-down"></i>
+            </button>
+			
+            <div class="dropdown-content">
+                <a href="AboutusPage.html">About Us</a>
+                <a href="Reviewpage.html">Reviews</a>
+				<a href="FAQpage.html">FAQ</a>
+                <a href="ContactusPage.html"> Contact Us </a>	
+            </div>
+			
+        </div>
+		
+    </div>
+
+	<div class="cover">
+		<div class="cover-content">
+			
+		</div>
+	</div>
+	
+	<div class="info-box">
+	
+		<h1>
+			Refreshing & nutritious yogurt w/ a range of options crafted <br />
+			to suit Filipino palates. Make your mix!
+		</h1>
+
+	</div>
+	
+	<div class="info-box2">
+		
+		
+		<a href="Menupage.html">
+			<button class="button button1" > Click Here to View Our Menu </button>
+		</a>
+			
+		<div class="gallery">
+			<center>
+					<img src="gallery1.jpg" alt="Image 1" width="600" height="400">
+					<img src="gallery2.jpg" alt="Image 2" width="600" height="400">
+					<img src="gallery3.jpg" alt="Image 3" width="600" height="400">
+					<img src="gallery4.jpg" alt="image 4" width="600" height="400">
+			</center>
+			
+		</div>
+
+	</div>
+
+<br /><br /><br />
+	
+	<footer>
+    
+		<img src="logo.png" alt="Koolits Logo" class="footer-logo">
+
+			<div class="footer-credentials">
+				<p>Koolits Frozen Yogurt Fruit Shake </p>
+				<p>54 D.M. Guevarra Corner Kanlaon, Highway Hills 1550</p>
+				<p>Mandaluyong City, 1550 Mandaluyong</p>
+				<p>Phone: +63917 170 2037</p>
+			</div>
+    
+    </footer>
+	
+</body>
+
+</html>
